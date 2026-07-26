@@ -633,7 +633,7 @@ const editForm = ref({
   no_telp: "" 
 });
 
-const BASE_URL = "http://localhost:8000"; 
+const BASE_URL = "https://kreditpoin.pythonanywhere.com"; 
 
 // STATE UNTUK PENCARIAN & PAGINASI
 const searchRiwayat = ref("");

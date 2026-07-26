@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000/',
+  baseURL: 'https://kreditpoin.pythonanywhere.com',
 });
 
 // Request Interceptor (KODE ASLI ANDA - TIDAK DIRUBAH)
