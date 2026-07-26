@@ -68,8 +68,8 @@ REST_FRAMEWORK = {
 
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'corsheaders.middleware.CorsMiddleware', # Letakkan di paling atas
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -149,6 +149,7 @@ AUTH_USER_MODEL = 'kpm_app.User'
 
 # Izinkan akses dari domain tertentu (Vue/React)
 CORS_ALLOWED_ORIGINS = [
+    "https://skppm.vercel.app",
     "http://localhost:3000",  # Port default React
     "http://localhost:5173",  # Port default Vue (Vite)
     "http://127.0.0.1:3000",
