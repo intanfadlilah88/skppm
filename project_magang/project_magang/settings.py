@@ -163,7 +163,7 @@ import os
 import dj_database_url
 
 # Konfigurasi Host & CORS
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '*').split(',')
+ALLOWED_HOSTS = ['kreditpoin.pythonanywhere.com', 'localhost', '127.0.0.1']
 CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS', 'http://localhost:5173').split(',')
 
 # Static files configuration
